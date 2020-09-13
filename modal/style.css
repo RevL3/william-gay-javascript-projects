@@ -15,7 +15,11 @@ body {
 }
 
 .close-btn {
-   position: relative;
+   position: absolute;
+   top: 1em;
+   right: 1em;
+   border: none;
+   background-color: whitesmoke;
 }
 
 h1 {
@@ -37,15 +41,13 @@ h1 {
 }
 
 .modal-container{
+   display: block;
    background-color: whitesmoke;
-   position: absolute;
-   grid-column: 2 / 3;
-   grid-row: 2 / 3;
-   justify-self: center;
-   width: 40vw;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   position: relative;
+   width: 33vw;
+   height: 25vh;
+   border-radius: 1em;
+   text-align: center;
 }
 
 .modal-overlay {
@@ -57,7 +59,12 @@ h1 {
    background: rgba( 73, 166, 233, 0.5);
    display: grid;
    place-items: center;
-
+   z-index: -10;
+   visibility: hidden;
 }
 
+.open-modal {
+   visibility: visible;
+   z-index: 10;
+}
 
