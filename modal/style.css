@@ -1,0 +1,63 @@
+.banner{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+body {
+   background-image: url(background.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: grid;
+   grid-template-columns: 30vw 40vw 30vw;
+   grid-template-rows: 33vh 33vh 33vh;
+}
+
+.close-btn {
+   position: relative;
+}
+
+h1 {
+   font-family: 'Gayathri', sans-serif;
+   font-size: 3em;
+   text-align: center;
+}
+
+.hero {
+   grid-column: 2 / 3;
+   grid-row: 2 / 3;
+   justify-self: center;
+   background-color: whitesmoke;
+   border-radius: 1em;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.modal-container{
+   background-color: whitesmoke;
+   position: absolute;
+   grid-column: 2 / 3;
+   grid-row: 2 / 3;
+   justify-self: center;
+   width: 40vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.modal-overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba( 73, 166, 233, 0.5);
+   display: grid;
+   place-items: center;
+
+}
+
+
