@@ -1,0 +1,52 @@
+body {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeats;
+    background: rgb(34,193,195);
+    background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,45,247,1) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    background: transparent;
+    font-size: 1.5em;
+}
+
+.minus-icon {
+    display: none;
+}
+
+.question {
+    background-color: white;
+    width: 40vw;
+    height: 10vh;
+}
+
+.questions {
+    height: 100%;
+}
+
+.question-text {
+    display: none;
+    text-align: center;
+}
+
+
+
+.show-text .minus-icon {
+    display: inline;
+}
+
+.show-text .plus-icon{
+    display: none;
+}
+
+.show-text .question-text {
+    display: block;
+}
+
+.title {
+    text-align: center;
+}

@@ -28,6 +28,12 @@ h1 {
    text-align: center;
 }
 
+@media (max-width: 600px) {
+   h1{
+      font-size: 2em;
+   }
+}
+
 .hero {
    grid-column: 2 / 3;
    grid-row: 2 / 3;
