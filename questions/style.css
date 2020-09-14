@@ -1,7 +1,6 @@
 body {
-    height: 100vh;
     background-size: cover;
-    background-repeat: no-repeats;
+    background-repeat: no-repeat;
     background: rgb(34,193,195);
     background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,45,247,1) 100%);
     display: flex;
@@ -12,6 +11,25 @@ button {
     border: none;
     background: transparent;
     font-size: 1.5em;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+button:focus {
+    color:rgba(34,193,195,1);
+    outline: none;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+button:hover {
+    transform: rotate(90deg);
+    transition: all 0.5s ease-in-out 0s;
+    border: none;
+}
+
+html {
+    min-height: 100%;
 }
 
 .minus-icon {
@@ -21,18 +39,25 @@ button {
 .question {
     background-color: white;
     width: 40vw;
-    height: 10vh;
+    padding: 30px;
+    margin-top:30px;
+    margin-bottom: 30px; 
+    position: relative;
+    -webkit-box-shadow: -1px 10px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 21px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 10px 21px 0px rgba(0,0,0,0.75);
+    /* display: block; */
+}
+
+
+.question-text {
+    display: none;
+    text-align: left;
 }
 
 .questions {
     height: 100%;
 }
-
-.question-text {
-    display: none;
-    text-align: center;
-}
-
 
 
 .show-text .minus-icon {
@@ -45,8 +70,13 @@ button {
 
 .show-text .question-text {
     display: block;
+    border-top: 2px solid rgb(255, 0, 234);
 }
 
 .title {
     text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
 }
